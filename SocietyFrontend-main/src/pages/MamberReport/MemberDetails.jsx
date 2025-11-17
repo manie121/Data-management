@@ -773,11 +773,11 @@ const MemberDetails = () => {
     // Export Excel then generate PDF
     const exportMemberThenDownload = (member, viewType = "all") => {
         if (!member) return;
-        try {
-            exportMemberToExcel(member, viewType);
-        } catch (e) {
-            console.error("Excel export failed:", e);
-        }
+        // try {
+        //     exportMemberToExcel(member, viewType);
+        // } catch (e) {
+        //     console.error("Excel export failed:", e);
+        // }
         try {
             generateMemberFieldsPDF(member, viewType);
         } catch (e) {
